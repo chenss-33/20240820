@@ -1,0 +1,194 @@
+.page-main{
+    display: flex;
+    background-color: #fff;
+}
+.header{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.left{
+    font-family: Tiempos,serif;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+}
+.right ul{
+    list-style: none;
+    display: flex;
+
+}
+.right ul li{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.right ul li.active{
+    text-decoration: underline;
+}
+.middle{
+    background-color: rgb(247 245 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px;
+}
+.middle .title{
+    font-family: Tiempos, serif;
+    font-size: 48px;
+}
+.middle .desc{
+    color: rgb(75 85 99);
+    max-width: 512px;
+    text-align: center;
+    margin-top: 20px;
+}
+.middle .upload-empty{
+    border-color: rgb(214 211 209);
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 275px;
+    height: 350px;
+    margin-top: 40px;
+    background-color: #fff;
+
+}
+.middle .upload-empty .click-content{
+    opacity: 0.75;
+    margin-top: 12px;
+    font-size: 14px;
+}
+.middle .upload-empty .center{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.middle .upload-empty span{
+    display: block;
+}
+.middle .upload-empty .anticon svg {
+    font-size: 32px;
+}
+.middle .doument{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-page{
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 28px;
+    min-height: 360px;
+}
+.button-box .btn1, .button-box .btn2{
+    background: rgb(255, 97, 47);
+    color: rgb(75 85 99);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 16px;
+    color: #fff;
+}
+.button-box{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 12px;
+    margin-top: 60px;
+}
+.button-box .btn1:hover{
+    color: #fff !important;
+    border: none !important;
+    background-color: rgb(255, 97, 47) !important;
+}
+
+.button-box .btn2:hover{
+    color: #fff !important;
+    border: none !important;
+    background-color: #212936 !important;
+}
+.scale-add, .scale-reduce{
+    border-radius: 50%;
+}
+.refresh{
+    background-color: rgb(255 97 47);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.download{
+    text-align: center;
+    margin-top: 36px;
+}
+.download button{
+    background-color: rgb(255 97 47);
+    color: #fff;
+    padding: 10px 12px;
+    height: 40px;
+}
+.refresh .anticon svg{
+    font-size: 12px;
+    color: #fff;
+}
+.button-box .btn2{
+    background-color: #212936;
+}
+.number-page{
+    left: 50%;
+    bottom: 30px;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.bottom{
+    background-color: #fff;
+    margin: 60px 10px 0 10px;
+}
+.bottom .content{
+    border-top: 1px solid rgba(17,24,39,.1);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+.bottom .content .section1 .title{
+    font-weight: 600;
+}
+.bottom .content .section1.box{
+    max-width: 400px;
+}
+.bottom .content .section1 .desc{
+    color: rgb(75 85 99);
+    font-size: 12px;
+    margin-top: 24px;
+}
