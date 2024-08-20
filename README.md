@@ -5,9 +5,6 @@ git clone https://github.com/chenss-33/20240820.git
 # 进入项目目录
 cd 项目名
 
-#切换到test分支
-git checkout origin/test
-
 # 安装依赖
 npm install
 
