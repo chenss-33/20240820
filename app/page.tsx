@@ -64,11 +64,10 @@ export default function Home() {
     setRotations(updatedRotations);
   };
 
-  const onDocumentLoadSuccess = ({ numPages }) => {
+  const onDocumentLoadSuccess = (numPages: any) => {
     setSuccess(true);
     setLoading(false);
-    console.log(`Successfully loaded ${numPages} pages.`);
-    setNumPages(numPages);
+    setNumPages(numPages._pdfInfo.numPages);
     // 初始化每个页面的旋转角度为 0
     const initialRotations = [];
     for (let i = 1; i <= numPages; i++) {
@@ -147,7 +146,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col page-main">
       <section className="header">
         <div className="left">
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
           <div>PDF.ai</div>
         </div>
         <div className="right">
@@ -242,6 +241,7 @@ export default function Home() {
                   <div
                     className="main-page"
                     onClick={() => rotatePage(index + 1)}
+                    key={index}
                   >
                     <Page
                       renderAnnotationLayer={false}
@@ -273,7 +273,7 @@ export default function Home() {
       <section className="bottom">
         <div className="content">
           <div className="section1 box">
-            <img src="" alt="" />
+            {/* <img src="" alt="" /> */}
             <p className="desc">
               Chat with any PDF: ask questions, get summaries, find information,
               and more.
